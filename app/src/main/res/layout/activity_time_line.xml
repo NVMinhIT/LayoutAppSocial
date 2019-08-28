@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TimeLineActivity">
+
+    <RelativeLayout
+        android:id="@+id/content_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/colorBackground"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_list"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="@dimen/dp48"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/timeline"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/ic_post"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview_page"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_linearlayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FirstProject</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="create_account">Create Account</string>
+    <string name="timeline">TimeLine</string>
+    <string name="username">User Name</string>
+    <string name="time">2m ago</string>
+    <string name="numberlike">199</string>
+    <string name="numbercomment1">215</string>
+    <string name="numbercomment2">120</string>
+</resources>
